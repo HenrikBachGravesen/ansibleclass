@@ -1,6 +1,8 @@
 ---
 - hosts: all
-
+  vars_files:
+    - ~/winpassword.yml
+    
   tasks:
   - name: Ping
     ping:
@@ -11,4 +13,3 @@
     win_ping:
     when: ansible_system == "Win32NT"
     ignore_errors: True
-    
