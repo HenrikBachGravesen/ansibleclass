@@ -74,3 +74,4 @@
       tags:
           solution: "webserver_{{ user }}"
           delete: ansibletraining
+
