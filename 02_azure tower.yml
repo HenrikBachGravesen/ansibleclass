@@ -29,7 +29,7 @@
   - name: Create a public ip address for webserver
     azure_rm_publicipaddress:
       resource_group: "{{ resource_group }}"
-      name: public_ip_webserver
+      name: "public_ip_webserver_{{ user }}"
       allocation_method: static
       domain_name: "webserver{{ domain_sub }}"
       tags:
